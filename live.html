@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="/docs/4.0/assets/img/favicons/favicon.ico">
+
+    <title>HAR System live</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/4.0/examples/cover/">
+
+    <!-- Bootstrap core CSS -->
+    <link href="/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="https://getbootstrap.com/docs/4.0/examples/cover/cover.css" rel="stylesheet">
+  </head>
+
+  <body class="text-center">
+
+    <div class="cover-container d-flex h-100 p-3 mx-auto flex-column">
+      <header class="masthead mb-auto">
+        <div class="inner">
+          <h3 class="masthead-brand" style="font-family:sans-serif">FYP</h3>
+          <nav class="nav nav-masthead justify-content-center">
+            <a class="nav-link active" href="/index.html"><h3 class="masthead-brand" style="font-family:sans-serif">Home</h3></a>
+            
+          </nav>
+        </div>
+      </header>
+	</br></br>
+    <main role="main" class="inner cover" style="text-align: center">
+	
+        <h1 class="cover-heading" style="font-family:sans-serif">
+			Human Activity Recognition for Musculoskeletal accidents at workplace
+		</h1>
+		</br>
+		<h3 class="mt-5" style="font-family:sans-serif">Live Stream</h3>
+        <img src="{{ url_for('video_feed') }}" width="100%">
+        </br></br>
+		<p class="lead">
+			<h3 class="mt-5" style="font-family:sans-serif"><a href="/index.html" class="btn btn-lg btn-secondary">Stop</a></h3>
+			
+
+			<form>
+				<button type="button" class="btn btn-lg btn-secondary" class="mt-5" style="font-family:sans-serif" onclick="window.location.href='{{ url_for( 'imgCaptured') }}';">Capture IMG</button>
+				
+			</form>
+		
+
+        </p>
+		
+    </main>
+
+    <footer class="mastfoot mt-auto">
+        <div class="inner">
+		</br></br></br></br>
+			<p style="font-family:sans-serif;">Final Year Project, by Hafiz Muhammad Abdullah</p>
+        </div>
+    </footer>
+    </div>
+
+
+    
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
+    <script src="assets/js/vendor/popper.min.js"></script>
+    <script src="dist/js/bootstrap.min.js"></script>
+  </body>
+</html>
